@@ -1,0 +1,217 @@
+body {
+    padding-top: 70px;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+/* For seperating page into columns */
+
+.pageColumns, .pageColumns .row {
+    width: 100%;
+    margin: auto
+}
+
+.pageColumns>.row:nth-child(2)>.col {
+    height: auto;
+}
+
+.pageColumnHolder {
+    padding-top: 10px;
+}
+
+.pageColumnHolder h2, .pageColumnHolder h4 {
+    text-align: center;
+}
+
+.pageColumnHolder img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.vertical-line-left {
+    border-left: 1px solid #8c8b8b;
+}
+
+.pageColumnHolder .btn {
+    width: 100%;
+    margin: auto;
+    border-top: 2px solid #8c8b8b;
+}
+
+.pageColumnHolder .btn:not(.collapsed) .initialShow {
+    display: none;
+}
+.pageColumnHolder .btn.collapsed .initialHide {
+    display: none;
+}   
+
+
+.lightBorder {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #8c8b8b;
+    border-radius: 10px;
+}
+
+/* For the journalism i frames */
+
+.articleViewer {
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    padding: 20px auto;
+}
+
+.articleRow {
+    height: 650px;
+}
+
+.noLinkFormat, .noLinkFormat:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.articleRow h2 {
+    border-top: 55px solid #fff;
+}
+
+/* For coding page "full grid" */
+
+.fullGridHolder {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.fullGridHolder>.row {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.fullGridHolder .col {
+    min-width: 250px;
+}
+
+.fullGridItem {
+    width: 100%;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.fullGridItem:hover {
+    transform: scale(1.05);
+}
+
+.fullGridItem>h2 {
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.hiddenDesc {
+    margin: auto 10px;
+}
+
+.hiddenDesc a, .hiddenDesc a:hover {
+    color: inherit;
+    font-weight: bold;
+}
+
+.vsPurple {
+    color: #b030ba;
+}
+
+.vsLightGrey {
+    color: #8c8b8b;
+}
+
+.codeBox {
+    width: 100%;
+    background-color: #303030;
+    padding: 5px;
+}
+
+.codeBox>p {
+    color: #d6d4d4;
+}
+
+/* For grid links to other pages  */
+
+.gridPageLinks {
+    border: 3px solid #7c8fcf;
+    border-radius: 25px;
+    min-width: 250px;
+    width: 30%;
+    margin: 30px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gridPageLinks>h2 {
+    text-align: center;
+    margin: 60px auto;
+    color: #5976d4;
+    text-decoration: none;
+}
+
+.gridPageLinks:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.codingLinkBG {
+    background-image: url(assets/codingLink.jpg);
+}
+
+.personalLinkBG {
+    background-image: url(assets/personalLink.jpg);
+}
+
+.journalismLinkBG {
+    background-image: url(assets/journalismLink.jpg);
+}
+
+.gridLinkHolder {
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.col {
+    min-width: 250px;
+}
+
+/* 
+* NAV STYLING
+*/
+
+.nav-fixed-top {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+}
+
+/* DROPDOWN NAV STYLING */
+
+@media screen and (min-width: 992px) {
+    /* Media becasue it doesnt make sense to have a hoverdropdown on phones/tablets */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu {
+        margin-top: 0;
+    }
+    .dropdown-toggle {
+        margin-bottom: 2px;
+    }
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle {
+        margin-bottom: 0;
+    }
+}

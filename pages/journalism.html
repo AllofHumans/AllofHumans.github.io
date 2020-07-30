@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        >
+        <!-- My CSS and Title -->
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" href="../assets/icon.png">
+        <!-- TODO: FIND ICON -->
+        <title>Ben Alexander Portfolio</title>
+    </head>
+    <body>
+        <!-- TODO: NAV -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fixed-top">
+            <a class="navbar-brand" href="index.html">Ben Alexander</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="coding.html">Coding</a>
+                    <a class="nav-item nav-link" href="personal.html">Personal</a>
+                    <!-- Dropdown stuff -->
+                    <div class="dropdown">
+                        <a class="nav-item nav-link dropdown-toggle active" data-toggle="dropdown" href="journalism.html">
+                            Journalism
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item active" href="journalism.html">Journalism Home</a>
+                            <a class="dropdown-item" href="journalism.html#impeachmentCoverageMarker">Impeachment coverage</a>
+                            <a class="dropdown-item" href="journalism.html#prop13CoverageMarker">CA Prop 13 coverage</a>
+                            <a class="dropdown-item" href="journalism.html#coronavirusCoverageMarker">Coronavirus coverage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- TODO: PAGE BODY -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>My award-winning student journalism work:</h1>
+                    <p>
+                        I wrote a political column for my high school newspaper and
+                        <a href="https://jeanc.org/2695/contests/annual-contest/2020-annual-contest-winners/" target="_blank">won</a>
+                        the 3rd place award for column writing in the Journalism Education Assocaiation of Norther Califorina 2020 awards. I wrote primarly opinion articles about politics from the perspective of a high school student (For absolute clarity, I should aknowledge that there are many things problematic about my old high school that I did not go into in this column, such as their union-busting efforts. I go into these things in more detail on the
+                        <a href="personal.html">page</a>
+                        of this site concerning me personally).
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="gridLinkHolder">
+                        <a href="journalism.html#impeachmentCoverageMarker">
+                            <div class="gridPageLinks">
+                                <h2>Impeachment Coverage</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gridLinkHolder">
+                        <a href="journalism.html#prop13CoverageMarker">
+                            <div class="gridPageLinks">
+                                <h2>CA Prop 13 Coverage</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gridLinkHolder">
+                        <a href="journalism.html#coronavirusCoverageMarker">
+                            <div class="gridPageLinks">
+                                <h2>Coronavirus Coverage</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row articleRow" id="impeachmentCoverageMarker">
+                <div class="col">
+                    <h2>
+                        <a class="noLinkFormat" href="https://summitpsnews.org/2019/12/02/students-need-strategies-to-get-reliable-information/" 
+                        target="_blank">Impeachment Coverage:</a>
+                    </h2>
+                    <iframe class="articleViewer" src="https://summitpsnews.org/2019/12/02/students-need-strategies-to-get-reliable-information/" title="Impeachment coverage article"></iframe>
+                </div>
+            </div>
+            <div class="row articleRow" id="prop13CoverageMarker">
+                <div class="col">
+                    <h2>
+                        <a class="noLinkFormat" href="https://summitpsnews.org/2020/02/14/its-time-to-challenge-prop-13-and-stop-giving-corporations-free-tax-breaks/"
+                        target="_blank">Califorina Prop 13 Coverage:</a>
+                    </h2>
+
+                    <iframe class="articleViewer" src="https://summitpsnews.org/2020/02/14/its-time-to-challenge-prop-13-and-stop-giving-corporations-free-tax-breaks/" title="Califorina prop 13 coverage article"></iframe>
+                </div>
+            </div>
+            <div class="row articleRow" id="coronavirusCoverageMarker">
+                <div class="col">
+                    <h2>
+                        <a class="noLinkFormat" href="https://summitpsnews.org/2020/05/04/our-health-crisis-could-easily-become-a-democracy-crisis-as-well/"
+                        target="_blank">Coronavirus and Democracy Coverage:</a>
+                    </h2>
+                    <iframe class="articleViewer" src="https://summitpsnews.org/2020/05/04/our-health-crisis-could-easily-become-a-democracy-crisis-as-well/" title="Coronavirus and democracy coverage article"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
